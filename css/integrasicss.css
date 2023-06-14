@@ -1,0 +1,25 @@
+/* cara mengintegrasikan Html dan Css: 
+    1. Inline CSS -> langsung dimasukan dalam tag html
+    contoh: <h1 style="color: blue;">Ini warna biru</h1>
+    2. Internal CSS -> biasanya ditaruh di bagian head pada html 
+    contoh: <style>
+                h1{
+                    color: blue;
+                }
+            </style>
+    3. Eksternal CSS -> diluar dari file html atau menggunakan file CSS tambahan secara terpisah
+                        kemudian file CSSnya dipanggil ke dalam html dan link css ditempatkan pada 
+                        bagian head html tepatnya dibawah tag title
+    contoh: index.html
+            <title>CSS nih dek</title>
+            <link rel="stylesheet" href="./style.css">
+            <h1>Text warna biru</h1>
+            
+            style.css
+            h1{
+                color: blue;
+            }
+    Hirarki kepentingan CSS:
+    style atribut, id, class, elements
+    1,0,0,0
+    */

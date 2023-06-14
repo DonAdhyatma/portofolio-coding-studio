@@ -1,0 +1,48 @@
+.ul{
+    list-style: none;
+    text-align: right;
+    padding: 0;
+}
+#lipc > .dm{
+    float: left;
+}
+#limb > .dmp{
+    float: left;
+}
+#lipc > .dm{
+    margin: 0;
+    padding: 15px 25px;
+    display: inline-block;
+    background-color: black;
+    color: azure;
+}
+#limb > .dmp{
+    margin: 0;
+    padding: 5px 10px;
+    position: relative;
+    left: 7px;
+    bottom: -10px;
+    display: none;
+    background-color: black;
+    color: azure;
+}
+.button-blue{
+    background-color:#1E90FF;
+    color: white;
+}
+.icon-mobile > .dmp{
+    display: none;
+}
+#li{
+    font-size: 16px;
+    padding: 15px 25px;
+    display: inline-block;
+}
+@media only screen and (max-width: 590px) {
+    #limb > .dmp{
+        display: block;
+    }
+    #lipc > .dm{
+        display: none;
+    }
+}

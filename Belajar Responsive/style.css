@@ -1,0 +1,54 @@
+ul{
+    list-style: none;
+    text-align: right;
+    padding: 0;
+}
+.icon{
+    float: left;
+}
+
+h2{
+    font-size: 1em;
+}
+.icon > h2{
+    margin: 0;
+}
+li{
+    font-size: 1.2em;
+    padding: 15px 25px;
+    display: inline-block;
+}
+.button-green{
+    background-color: green;
+    color: white;
+}
+.mobile{
+    /* background-color: black;
+    color: white; */
+    display: none;
+}
+.icon.mobile{
+    background-color: black;
+    color: white;
+}
+.center{
+    text-align: center;
+}
+img{
+    width: 100%;
+    max-width: 700px;
+}
+/* konsep CSS media query */
+/* simpelnya media query ini adalah kondisi dimana ukuran layar hp sekian
+   kita bisa atur properti cssnya gimana*/
+@media only screen and (max-width: 600px){
+    html{
+        font-size: 12px;
+    }
+    .mobile{
+        display: block;
+    }
+    .desktop{
+        display: none;
+    }
+}
