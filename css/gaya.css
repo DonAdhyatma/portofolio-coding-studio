@@ -182,7 +182,7 @@ hr {
 }
 
 .containernya .contact-icon-bundler {
-  margin-left: 65%;
+  margin-left: auto;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
