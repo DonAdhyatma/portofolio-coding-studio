@@ -108,7 +108,7 @@ hr {
 
 .title-portofolio,
 .title-contact-us {
-  text-decoration: underline;
+  text-decoration: none;
   text-align: center;
 }
 
@@ -171,29 +171,9 @@ hr {
   padding: 0.5em 0;
 }
 
-footer {
-  text-align: center;
-  margin-top: 2em;
-  padding: 1.5em 0;
-  color: white;
-  background-color: black;
-}
-
 .contact-icon {
-  width: 50px;
-  margin: 2em;
-}
-
-.contact-desktop {
-  display: none;
-}
-
-.contact-icon-bundler {
-  display: block;
-}
-
-.contact-info > div {
-  display: inline-block;
+  width: 70px;
+  margin: 30px;
 }
 
 .containernya {
@@ -202,16 +182,20 @@ footer {
 }
 
 .containernya .contact-icon-bundler {
-  padding: 1.5rem 1rem;
-  margin: auto;
-
+  margin-left: 65%;
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row nowrap;
   align-items: center;
-  justify-content: center;
-  gap: 1.5rem;
+  justify-content: flex-start;
 }
 
+footer {
+  text-align: center;
+  margin-top: 2em;
+  padding: 1.5em 0;
+  color: white;
+  background-color: black;
+}
 @media only screen and (min-width: 600px) {
   .non-desktop {
     display: none;
@@ -254,18 +238,21 @@ footer {
     vertical-align: top;
   }
 
-  .contact-desktop {
-    display: inline-block;
-    vertical-align: middle;
-  }
-
   .contact-icon-bundler {
-    display: inline-block;
+    display: flex;
     min-width: 300px;
     text-decoration: none;
     color: black;
+    justify-content: center;
+    gap: 2rem 1rem;
+    padding-left: 0;
   }
 
+  .contact-desktop {
+    display: flex;
+    order: 3;
+    gap: 1.5rem;
+  }
   .contact-icon {
     display: inline-block;
     vertical-align: middle;
